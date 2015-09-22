@@ -1,0 +1,15 @@
+<div>
+    <div class="code-wrapper">
+        <div class="solved" ng-show="solved">Solved! Great Job!</div>
+        <textarea class="code" placeholder="Type Code Here..." ng-change="executeCode(code)" ng-model="code"></textarea>
+        <ul class="log" ng-show="log">
+            <li ng-repeat="(i,logItem) in log track by $index">
+                {{i}}:&emsp;{{logItem}}
+                <div class="pad-2"><hr></div>
+            </li>
+        </ul>
+        <span ng-hide="solved">Skip</span>
+        <span ng-show="solved">Solved</span>
+        : <input type="checkbox" ng-model="solved">
+    </div>
+</div>

@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>A Better Programming Guide</title>
+        <link rel="stylesheet" href="main.css">
+        <script src="angular.min.js"></script>
+        <script src="main.js"></script>
+    </head>
+    <body ng-app="a-better-programming-guide">
+        <div class="doc" ng-controller="IndexCtrl">
+            <header>
+                Ben A<br>
+                Ms. Kueck<br>
+                Language Arts<br>
+                September 22, 2015<br>
+                <h1>
+                    A Better Programming Guide
+                </h1>
+            </header>
+            <p>
+                Last year, you might have read a introduction to Python programming. The problem is:
+                It wasn’t great at teaching you things. This time, I’m going to be teaching Javascript,
+                one of the world’s most popular languages, in a way that you can start using it, and understand
+                even the most complex parts. I'll be covering how to do simple addition, all the way up 
+                to making a homework planner. You'll be learning things like JQuery, Node.js, and Angular.js,
+                which power millions of websites. Not only that, but you'll even be learning HTML and CSS to
+                make websites. Oh - Even this document is a website!
+            </p>
+            <p>
+                One of the first things programmers do is have a program say "Hello World" - so let's start
+                with that. It's a pretty simple thing to do. Type <code>console.log("Hello World");</code>
+                below to try it.
+            </p>
+            <try-out-box solution="['Hello World']" solved="solved.helloWorld" answer='console.log("Hello World");'></try-out-box>
+            <div ng-show="solved.helloWorld">
+                <p>
+                    So, you just wrote your first line of Javascript! Here's how the "statement" of
+                    code breaks down: First, your computer reads <code>console</code>, and then
+                    <code>log</code>, and your computer decides that you are telling the console
+                    (a noun) to log (a verb). Then, the computer reads what is inside of the parenthesis
+                    as arugments (adjectives). In English, this would read: Console, log "Hello World".
+                    When you take the time to break it up, coding isn't that complex.
+                </p>
+                <p>
+                    Now that you understand the basics of how the console works, try telling me your name.
+                </p>
+                <try-out-box solved="solved.name" log="name"></try-out-box>
+                <div ng-show="solved.name">
+                    <p>
+                        Nice job, {{name[0]}}! It seems like you are starting to get the hang of this.
+                        Let's try adding two numbers together - how about 3 + 4? To do this, we'll
+                        type <code>3 + 4</code>, instead of the string(<code>"Hello World"</code>) you used in the previous
+                        statement.
+                    </p>
+                    <try-out-box solved="solved.math" solution="['7']"></try-out-box>
+                    <div ng-show="solved.math">
+                        <p>
+                            Yup - Javascript can do math - but that's a bit boring. Let's make a simple
+                            calculator by asking the user for 2 numbers and adding them. To do this,
+                            use <code>prompt()</code>. You should also pass a string as the argument,
+                            to use as the question. Ask for "Number 1", and "Number 2", and add them together.
+                        </p>
+<!--                        <try-out-box solved="solved.input" solved-by="usePrompt"></try-out-box>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

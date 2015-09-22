@@ -1,0 +1,57 @@
+body {
+    font: "Times New Roman";
+    font-size: 12pt;
+    line-height: 200%;
+    width: 8.5in;
+    height: 11in;
+    margin-left: auto;
+    margin-right: auto;
+}
+.doc {
+    margin: 1in;
+}
+h1 {
+    font: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    text-align: center;
+}
+p {
+    text-indent: 3em;
+    position: static;
+}
+code {
+    background: #EBEBEB;
+    color: red;
+}
+.code-wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+}
+textarea.code {
+    height: 1in;
+    width: 100%;
+    font-size: auto;
+    border: 3px solid #cccccc;
+    padding: 5px;
+    font-family: "Courier New", "Courier";
+}
+ul.log {
+    position: static;
+    padding-left: 0;
+    list-style: none;
+    font-family: "Courier New", "Courier";
+    font-size: auto;
+    border: 3px solid #cccccc;
+}
+.pad-2 {
+    padding-left: 2em;
+}
+.solved {
+    margin-bottom: 20px;
+    background-color: lightgreen;
+    padding-left: 2em;
+    border-radius: 5px;
+}
