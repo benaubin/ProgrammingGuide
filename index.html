@@ -21,7 +21,7 @@
                 It wasn’t great at teaching you things. This time, I’m going to be teaching Javascript,
                 one of the world’s most popular languages, in a way that you can start using it, and understand
                 even the most complex parts. I'll be covering how to do simple addition, all the way up 
-                to making a homework planner. You'll be learning things like JQuery, Node.js, and Angular.js,
+                to making a homework planner. You'll be learning things like Node.js, and Angular.js,
                 which power millions of websites. Not only that, but you'll even be learning HTML and CSS to
                 make websites. Oh - Even this document is a website!
             </p>
@@ -30,8 +30,8 @@
                 with that. It's a pretty simple thing to do. Type <code>console.log("Hello World");</code>
                 below to try it.
             </p>
-            <try-out-box solution="['Hello World']" solved="solved.helloWorld" answer='console.log("Hello World");'></try-out-box>
-            <div ng-show="solved.helloWorld">
+            <try-out-box></try-out-box>
+            <div>
                 <p>
                     So, you just wrote your first line of Javascript! Here's how the "statement" of
                     code breaks down: First, your computer reads <code>console</code>, and then
@@ -43,23 +43,40 @@
                 <p>
                     Now that you understand the basics of how the console works, try telling me your name.
                 </p>
-                <try-out-box solved="solved.name" log="name"></try-out-box>
-                <div ng-show="solved.name">
+                <try-out-box></try-out-box>
+                <div>
                     <p>
                         Nice job, {{name[0]}}! It seems like you are starting to get the hang of this.
                         Let's try adding two numbers together - how about 3 + 4? To do this, we'll
                         type <code>3 + 4</code>, instead of the string(<code>"Hello World"</code>) you used in the previous
                         statement.
                     </p>
-                    <try-out-box solved="solved.math" solution="['7']"></try-out-box>
-                    <div ng-show="solved.math">
+                    <try-out-box></try-out-box>
+                    <div>
                         <p>
-                            Yup - Javascript can do math - but that's a bit boring. Let's make a simple
-                            calculator by asking the user for 2 numbers and adding them. To do this,
-                            use <code>prompt()</code>. You should also pass a string as the argument,
-                            to use as the question. Ask for "Number 1", and "Number 2", and add them together.
+                            Yup - Javascript can do math - but that's a bit boring. Let's prompt the user
+                            for what they want to log, and log that for them. Use <code>prompt("question")</code>
+                            inside of the arguments for <code>console.log()</code>. Ask them <code>What do you want to log?</code>.
                         </p>
-<!--                        <try-out-box solved="solved.input" solved-by="usePrompt"></try-out-box>-->
+                        <try-out-box></try-out-box>
+                        <div>
+                            <p>
+                                Javascript is pretty cool! It's super flexible, and powers millions of websites, 
+                                along with many applications. With it, you've said text, did math, and asked for input, 
+                                which is some of the most fundamental parts of programming. You're pretty much ready 
+                                to take a huge leap into HTML, which makes websites real - instead of just logged statements.
+                                You've learned a bunch about the fundamentals of wrinting code that works in Javascript. 
+                                If you need to, go over the basics above, before we move on to making and manipulating a website.
+                            </p>
+                            <p>
+                                But it's hard to create interfaces in Javascript - most websites don't use a bunch of alerts to
+                                communicate infomation. This where HTML (Hyper-Text Markup Language) helps. Basically, it was
+                                designed as a way to link websites together and make them look pretty. To say Hello World in HTML,
+                                type <code>&lt;p>Hello World&lt;/p></code>. A <code>&lt;p></code> tag tells you that you are going
+                                to write, and the <code>&lt;/p></code> ends the paragraph.
+                            </p>
+                            <html-try-out></html-try-out>
+                        </div>
                     </div>
                 </div>
             </div>
