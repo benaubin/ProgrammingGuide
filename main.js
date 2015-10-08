@@ -1,8 +1,6 @@
 var app = angular.module('a-better-programming-guide',[]);
 app.controller('IndexCtrl', function($rootScope, $scope){
-    $rootScope.showAnswers = false;
-    $scope.usePrompt = function(fake_console, meta, code){
-    }
+    $scope.name = ['reader']
 });
 app.config(function($sceProvider) {
   $sceProvider.enabled(false);
@@ -26,7 +24,7 @@ app.directive('tryOutBox', function() {
                 console.line = 0;
                 $scope.log = [];
                 try {
-                    (eval("(function a(console){" + code + ";p();})"))(fake_console);
+                    (eval("(function a(console){" + code + "})"))(fake_console);
                 } catch (e) {
                     fake_console.log(e.message);
                 }

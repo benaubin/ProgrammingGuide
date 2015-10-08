@@ -19,10 +19,9 @@
             <p>
                 Last year, you might have read a introduction to Python programming. The problem is:
                 It wasn’t great at teaching you things. This time, I’m going to be teaching Javascript,
-                one of the world’s most popular languages, in a way that you can start using it, and understand
-                even the most complex parts. I'll be covering how to do simple addition, all the way up 
-                to making a homework planner. You'll be learning things like Node.js, and Angular.js,
-                which power millions of websites. Not only that, but you'll even be learning HTML and CSS to
+                one of the world’s most popular languages, in a way that you can start using and understanding it.
+                I'll be covering how to do simple addition, all the way up to making a simple website.
+                The things you'll be learning power millions of websites. You'll even be learning HTML to
                 make websites. Oh - Even this document is a website!
             </p>
             <p>
@@ -43,13 +42,15 @@
                 <p>
                     Now that you understand the basics of how the console works, try telling me your name.
                 </p>
-                <try-out-box></try-out-box>
+                <try-out-box log="name"></try-out-box>
                 <div>
                     <p>
                         Nice job, {{name[0]}}! It seems like you are starting to get the hang of this.
                         Let's try adding two numbers together - how about 3 + 4? To do this, we'll
-                        type <code>3 + 4</code>, instead of the string(<code>"Hello World"</code>) you used in the previous
-                        statement.
+                        type <code>3 + 4</code>, instead of the string(<code>"Hello World"</code>)
+                        you used in the previous statement. Since this something the computer needs to do
+                        (instead of plain-text), we don't put it in quotes, or the console would try to 
+                        say <code>3 + 4</code> instead of the expected <code>7</code>.
                     </p>
                     <try-out-box></try-out-box>
                     <div>
