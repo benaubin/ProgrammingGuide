@@ -17,16 +17,16 @@
                 </h1>
             </header>
             <p>
-                Last year, you might have read a introduction to Python programming. The problem is:
-                It wasn’t great at teaching you things. This time, I’m going to be teaching Javascript,
+                Have you ever wondered what happens when you use your computer?
+                When you click a button or open an app? First, the computer interprets code made by a human
+                that was written a "language" that it understands. Here, I’m going to be teaching Javascript,
                 one of the world’s most popular languages, in a way that you can start using and understanding it.
-                I'll be covering how to do simple addition, all the way up to making a simple website.
-                The things you'll be learning power millions of websites. You'll even be learning HTML to
-                make websites. Oh - Even this document is a website!
+                I'll be covering how to do simple addition, all the way up to making a super simple website.
+                The things you'll be learning power millions of websites. Oh - Even this document is a website!
             </p>
             <p>
-                One of the first things programmers do is have a program say "Hello World" - so let's start
-                with that. It's a pretty simple thing to do. Type <code>console.log("Hello World");</code>
+                One of the first things programmers do is have a program say "Hello World". It's a tradition, 
+                and it's pretty simple, so why not start with that? It's as simple as typing <code>console.log("Hello World");</code>
                 below to try it.
             </p>
             <try-out-box></try-out-box>
@@ -36,8 +36,8 @@
                     code breaks down: First, your computer reads <code>console</code>, and then
                     <code>log</code>, and your computer decides that you are telling the console
                     (a noun) to log (a verb). Then, the computer reads what is inside of the parenthesis
-                    as arugments (adjectives). In English, this would read: Console, log "Hello World".
-                    When you take the time to break it up, coding isn't that complex.
+                    as arguments (adjectives). We are using quotes to show that the text is a <strong>string</strong> of plain text,
+                    not code. In English, this would read: Console, log "Hello World".
                 </p>
                 <p>
                     Now that you understand the basics of how the console works, try telling me your name.
@@ -47,37 +47,27 @@
                     <p>
                         Nice job, {{name[0]}}! It seems like you are starting to get the hang of this.
                         Let's try adding two numbers together - how about 3 + 4? To do this, we'll
-                        type <code>3 + 4</code>, instead of the string(<code>"Hello World"</code>)
+                        type <code>3 + 4</code> without quotes, instead of the string (<code>"Hello World"</code>)
                         you used in the previous statement. Since this something the computer needs to do
-                        (instead of plain-text), we don't put it in quotes, or the console would try to 
-                        say <code>3 + 4</code> instead of the expected <code>7</code>.
+                        (instead of plain-text), we don't put it in quotes, so that the computer knows to
+                        interprate it as code - not a string.
                     </p>
                     <try-out-box></try-out-box>
                     <div>
                         <p>
-                            Yup - Javascript can do math - but that's a bit boring. Let's prompt the user
-                            for what they want to log, and log that for them. Use <code>prompt("question")</code>
-                            inside of the arguments for <code>console.log()</code>. Ask them <code>What do you want to log?</code>.
+                            Yup - Javascript can do math - but that's a bit boring. If this was an actual program,
+                            we'd probably need to receive input from the user in someway. Otherwise, why have a program?
+                            To do this, let's prompt the user for what they want to log, and log that for them. Use <code>prompt("question")</code>
+                            inside of the arguments for <code>console.log()</code>. You can ask them whatever you want.
                         </p>
                         <try-out-box></try-out-box>
-                        <div>
-                            <p>
-                                Javascript is pretty cool! It's super flexible, and powers millions of websites, 
-                                along with many applications. With it, you've said text, did math, and asked for input, 
-                                which is some of the most fundamental parts of programming. You're pretty much ready 
-                                to take a huge leap into HTML, which makes websites real - instead of just logged statements.
-                                You've learned a bunch about the fundamentals of wrinting code that works in Javascript. 
-                                If you need to, go over the basics above, before we move on to making and manipulating a website.
-                            </p>
-                            <p>
-                                But it's hard to create interfaces in Javascript - most websites don't use a bunch of alerts to
-                                communicate infomation. This where HTML (Hyper-Text Markup Language) helps. Basically, it was
-                                designed as a way to link websites together and make them look pretty. To say Hello World in HTML,
-                                type <code>&lt;p>Hello World&lt;/p></code>. A <code>&lt;p></code> tag tells you that you are going
-                                to write, and the <code>&lt;/p></code> ends the paragraph.
-                            </p>
-                            <html-try-out></html-try-out>
-                        </div>
+                        <p>
+                            Javascript is pretty cool! It's super flexible, and powers millions of websites, 
+                            along with many applications. With it, you've said text, did math, and asked for input, 
+                            which is some of the most fundamental parts of programming. Try making other programs with
+                            those statements. Feel free to go over the basics above, but once you are ready, why 
+                            not explore Javascript and see what else you can do? You've already done the hardest part of anything: starting.
+                        </p>
                     </div>
                 </div>
             </div>
